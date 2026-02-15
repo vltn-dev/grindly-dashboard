@@ -63,8 +63,8 @@
     "total_size": "0 KB"
   },
   "flux": {
-    "status": "running",
-    "current_task": "⏳ Fix CI pnpm + pipeline Vercel",
+    "status": "completed",
+    "current_task": "✅ Fix CI pnpm + pipeline Vercel",
     "tokens_today": 0,
     "last_run": "16:27",
     "output": "—",
