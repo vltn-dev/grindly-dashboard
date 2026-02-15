@@ -1,9 +1,9 @@
 {
   "atlas": {
-    "status": "running",
-    "current_task": "⏳ Phase 6.1 dispatch — CI fix + 4 agents dispatched",
+    "status": "completed",
+    "current_task": "✅ Phase 6.1 dispatch — CI fix + 4 agents dispatched",
     "tokens_today": 0,
-    "last_run": "18:47",
+    "last_run": "18:48",
     "output": "Fixed Resend lazy-init (CI green), dispatched Forge/Ledger/Lumen/Echo",
     "files_count": 0,
     "total_size": "0 KB"
