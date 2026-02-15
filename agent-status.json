@@ -18,8 +18,8 @@
     "total_size": "33 KB"
   },
   "lumen": {
-    "status": "running",
-    "current_task": "⏳ Audit UX onboarding + dashboards",
+    "status": "completed",
+    "current_task": "✅ Audit UX onboarding + dashboards",
     "tokens_today": 0,
     "last_run": "16:53",
     "output": "—",
@@ -30,7 +30,7 @@
     "status": "running",
     "current_task": "⏳ Préparation suite tests e2e",
     "tokens_today": 0,
-    "last_run": "16:53",
+    "last_run": "16:54",
     "output": "—",
     "files_count": 1,
     "total_size": "19 KB"
@@ -48,7 +48,7 @@
     "status": "running",
     "current_task": "⏳ Scoring model alignment",
     "tokens_today": 0,
-    "last_run": "16:53",
+    "last_run": "16:54",
     "output": "—",
     "files_count": 1,
     "total_size": "19 KB"
@@ -63,8 +63,8 @@
     "total_size": "25 KB"
   },
   "flux": {
-    "status": "running",
-    "current_task": "⏳ Fix CI pnpm + pipeline Vercel",
+    "status": "completed",
+    "current_task": "✅ Fix CI pnpm + pipeline Vercel",
     "tokens_today": 0,
     "last_run": "16:53",
     "output": "—",
@@ -84,7 +84,7 @@
     "status": "running",
     "current_task": "⏳ Setup dashboards churn/funnels",
     "tokens_today": 0,
-    "last_run": "16:53",
+    "last_run": "16:54",
     "output": "—",
     "files_count": 1,
     "total_size": "11 KB"
