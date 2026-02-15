@@ -1,101 +1,101 @@
 {
   "atlas": {
     "status": "running",
-    "current_task": "⏳ Coordination + rapport setup",
+    "current_task": "⏳ No active task",
     "tokens_today": 0,
-    "last_run": "16:45",
-    "output": "reports/daily/15-02-am.txt",
+    "last_run": "16:46",
+    "output": "—",
     "files_count": 0,
     "total_size": "0 KB"
   },
   "vega": {
-    "status": "completed",
-    "current_task": "✅ Backlog priorisation + specs DB/auth",
+    "status": "running",
+    "current_task": "No active task",
     "tokens_today": 0,
-    "last_run": "2026-02-15T15:00:00Z",
+    "last_run": "16:45",
     "output": "—",
-    "files_count": 0,
-    "total_size": "0 KB"
+    "files_count": 1,
+    "total_size": "33 KB"
   },
   "lumen": {
-    "status": "completed",
-    "current_task": "✅ Audit UX onboarding + dashboards",
+    "status": "running",
+    "current_task": "No active task",
     "tokens_today": 0,
-    "last_run": "2026-02-15T15:00:00Z",
+    "last_run": "16:45",
     "output": "—",
-    "files_count": 0,
-    "total_size": "0 KB"
+    "files_count": 5,
+    "total_size": "82 KB"
   },
   "pulse": {
-    "status": "completed",
-    "current_task": "✅ Préparation suite tests e2e",
+    "status": "running",
+    "current_task": "No active task",
     "tokens_today": 0,
-    "last_run": "16:08",
+    "last_run": "16:45",
     "output": "—",
-    "files_count": 0,
-    "total_size": "0 KB"
+    "files_count": 1,
+    "total_size": "19 KB"
   },
   "forge": {
-    "status": "completed",
-    "current_task": "✅ DB Supabase + Google Sign-In",
+    "status": "running",
+    "current_task": "No active task",
     "tokens_today": 0,
-    "last_run": "16:04",
+    "last_run": "16:45",
     "output": "—",
-    "files_count": 0,
-    "total_size": "0 KB"
+    "files_count": 2,
+    "total_size": "28 KB"
   },
   "quanta": {
-    "status": "completed",
-    "current_task": "✅ Scoring model alignment",
+    "status": "running",
+    "current_task": "No active task",
     "tokens_today": 0,
-    "last_run": "2026-02-15T15:00:00Z",
+    "last_run": "16:45",
     "output": "—",
-    "files_count": 0,
-    "total_size": "0 KB"
+    "files_count": 1,
+    "total_size": "19 KB"
   },
   "shield": {
-    "status": "completed",
-    "current_task": "✅ Audit auth + RLS Supabase",
+    "status": "running",
+    "current_task": "No active task",
     "tokens_today": 0,
-    "last_run": "2026-02-15T15:00:00Z",
+    "last_run": "16:45",
     "output": "—",
-    "files_count": 0,
-    "total_size": "0 KB"
+    "files_count": 1,
+    "total_size": "25 KB"
   },
   "flux": {
-    "status": "completed",
-    "current_task": "✅ Fix CI pnpm + pipeline Vercel",
+    "status": "running",
+    "current_task": "⏳ No active task",
     "tokens_today": 0,
-    "last_run": "16:27",
+    "last_run": "16:46",
     "output": "—",
-    "files_count": 0,
-    "total_size": "0 KB"
+    "files_count": 14,
+    "total_size": "64 KB"
   },
   "echo": {
-    "status": "completed",
-    "current_task": "✅ Préparation content-week-08.md",
+    "status": "idle",
+    "current_task": "No active task",
     "tokens_today": 0,
-    "last_run": "2026-02-15T15:00:00Z",
+    "last_run": "—",
     "output": "—",
     "files_count": 0,
     "total_size": "0 KB"
   },
   "nova": {
-    "status": "completed",
-    "current_task": "✅ Setup dashboards churn/funnels",
+    "status": "running",
+    "current_task": "No active task",
     "tokens_today": 0,
-    "last_run": "2026-02-15T15:00:00Z",
+    "last_run": "16:45",
     "output": "—",
-    "files_count": 0,
-    "total_size": "0 KB"
+    "files_count": 1,
+    "total_size": "11 KB"
   },
   "ledger": {
-    "status": "completed",
-    "current_task": "✅ Pricing review + LTV/CAC",
+    "status": "running",
+    "current_task": "No active task",
     "tokens_today": 0,
-    "last_run": "2026-02-15T15:00:00Z",
+    "last_run": "16:45",
     "output": "—",
-    "files_count": 0,
-    "total_size": "0 KB"
+    "files_count": 1,
+    "total_size": "7 KB"
   }
 }
