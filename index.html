@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🧠 Grindly — Agent Activity Dashboard</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a0f; color: #e0e0e0; padding: 20px; }
+    h1 { text-align: center; font-size: 1.8em; margin-bottom: 8px; color: #fff; }
+    .subtitle { text-align: center; color: #888; margin-bottom: 24px; font-size: 0.9em; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; margin-bottom: 32px; }
+    .card { background: #14141f; border: 1px solid #2a2a3a; border-radius: 12px; padding: 16px; transition: border-color 0.3s; }
+    .card:hover { border-color: #4a4a6a; }
+    .card-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .card-emoji { font-size: 1.6em; }
+    .card-name { font-weight: 700; font-size: 1.1em; }
+    .card-role { color: #888; font-size: 0.8em; }
+    .status { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 0.75em; font-weight: 600; text-transform: uppercase; }
+    .status-running { background: #0d3320; color: #4ade80; }
+    .status-idle { background: #332d0d; color: #facc15; }
+    .status-queued { background: #0d1a33; color: #60a5fa; }
+    .status-failed { background: #330d0d; color: #f87171; }
+    .stat-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #1a1a2a; font-size: 0.85em; }
+    .stat-row:last-child { border-bottom: none; }
+    .stat-label { color: #888; }
+    .stat-value { font-weight: 600; }
+    .summary-bar { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 24px; }
+    .summary-item { background: #14141f; border: 1px solid #2a2a3a; border-radius: 8px; padding: 12px 20px; text-align: center; min-width: 120px; }
+    .summary-number { font-size: 1.8em; font-weight: 800; color: #fff; }
+    .summary-label { font-size: 0.75em; color: #888; text-transform: uppercase; }
+    .log-section { background: #14141f; border: 1px solid #2a2a3a; border-radius: 12px; padding: 16px; margin-bottom: 24px; }
+    .log-section h2 { font-size: 1.1em; margin-bottom: 12px; color: #fff; }
+    .log-entry { padding: 8px 0; border-bottom: 1px solid #1a1a2a; font-size: 0.85em; display: flex; gap: 12px; }
+    .log-time { color: #888; min-width: 60px; }
+    .log-agent { font-weight: 600; min-width: 80px; }
+    .log-action { color: #a0a0c0; }
+    #refresh-btn { display: block; margin: 0 auto 24px; background: #2563eb; color: #fff; border: none; padding: 10px 24px; border-radius: 8px; cursor: pointer; font-size: 0.9em; }
+    #refresh-btn:hover { background: #1d4ed8; }
+    #last-update { text-align: center; color: #666; font-size: 0.8em; margin-bottom: 16px; }
+  </style>
+</head>
+<body>
+  <h1>🧠 Grindly — Agent Activity Dashboard</h1>
+  <p class="subtitle">Multi-Agent Monitoring • Real-time Status • Token Tracking</p>
+
+  <div id="last-update">Loading...</div>
+  <button id="refresh-btn" onclick="loadData()">🔄 Refresh</button>
+
+  <div class="summary-bar" id="summary-bar">
+    <div class="summary-item"><div class="summary-number" id="total-agents">11</div><div class="summary-label">Agents</div></div>
+    <div class="summary-item"><div class="summary-number" id="running-count">—</div><div class="summary-label">Running</div></div>
+    <div class="summary-item"><div class="summary-number" id="idle-count">—</div><div class="summary-label">Idle</div></div>
+    <div class="summary-item"><div class="summary-number" id="failed-count">—</div><div class="summary-label">Failed</div></div>
+    <div class="summary-item"><div class="summary-number" id="total-tokens">—</div><div class="summary-label">Tokens Today</div></div>
+  </div>
+
+  <div class="grid" id="agent-grid"></div>
+
+  <div class="log-section">
+    <h2>📋 Recent Activity Log</h2>
+    <div id="activity-log">Loading...</div>
+  </div>
+
+  <script>
+    const AGENTS = [
+      { id: 'atlas',  name: 'Atlas',  emoji: '🧭', role: 'Team Leader / COO' },
+      { id: 'vega',   name: 'Vega',   emoji: '🧠', role: 'Product Manager' },
+      { id: 'lumen',  name: 'Lumen',  emoji: '🎨', role: 'UX/UI Expert' },
+      { id: 'pulse',  name: 'Pulse',  emoji: '🧪', role: 'QA / Tester' },
+      { id: 'forge',  name: 'Forge',  emoji: '👨‍💻', role: 'Full-Stack Engineer' },
+      { id: 'quanta', name: 'Quanta', emoji: '📊', role: 'AI / Quant Engineer' },
+      { id: 'shield', name: 'Shield', emoji: '🔐', role: 'Cybersecurity' },
+      { id: 'flux',   name: 'Flux',   emoji: '⚡', role: 'DevOps / Performance' },
+      { id: 'echo',   name: 'Echo',   emoji: '📈', role: 'Growth Content' },
+      { id: 'nova',   name: 'Nova',   emoji: '🔍', role: 'Data Analyst' },
+      { id: 'ledger', name: 'Ledger', emoji: '🧾', role: 'Finance / Pricing' },
+    ];
+
+    async function loadData() {
+      let statusData = {};
+      try {
+        const resp = await fetch('./agent-status.json?' + Date.now());
+        statusData = await resp.json();
+      } catch (e) {
+        // No status file yet — show defaults
+        AGENTS.forEach(a => {
+          statusData[a.id] = { status: 'queued', current_task: 'Initializing...', tokens_today: 0, last_run: '—', output: '—' };
+        });
+      }
+
+      document.getElementById('last-update').textContent = 'Last update: ' + new Date().toLocaleTimeString('fr-CH');
+
+      let running = 0, idle = 0, failed = 0, totalTokens = 0;
+      const grid = document.getElementById('agent-grid');
+      grid.innerHTML = '';
+
+      AGENTS.forEach(agent => {
+        const data = statusData[agent.id] || { status: 'idle', current_task: '—', tokens_today: 0, last_run: '—', output: '—' };
+        if (data.status === 'running') running++;
+        else if (data.status === 'idle') idle++;
+        else if (data.status === 'failed') failed++;
+        totalTokens += data.tokens_today || 0;
+
+        grid.innerHTML += `
+          <div class="card">
+            <div class="card-header">
+              <span class="card-emoji">${agent.emoji}</span>
+              <div>
+                <div class="card-name">${agent.name}</div>
+                <div class="card-role">${agent.role}</div>
+              </div>
+              <span class="status status-${data.status}" style="margin-left:auto">${data.status}</span>
+            </div>
+            <div class="stat-row"><span class="stat-label">Current Task</span><span class="stat-value">${data.current_task || '—'}</span></div>
+            <div class="stat-row"><span class="stat-label">Tokens Today</span><span class="stat-value">${(data.tokens_today || 0).toLocaleString()}</span></div>
+            <div class="stat-row"><span class="stat-label">Last Run</span><span class="stat-value">${data.last_run || '—'}</span></div>
+            <div class="stat-row"><span class="stat-label">Last Output</span><span class="stat-value">${data.output || '—'}</span></div>
+          </div>`;
+      });
+
+      document.getElementById('running-count').textContent = running;
+      document.getElementById('idle-count').textContent = idle;
+      document.getElementById('failed-count').textContent = failed;
+      document.getElementById('total-tokens').textContent = totalTokens.toLocaleString();
+
+      // Load activity log
+      let logHtml = '';
+      try {
+        const logResp = await fetch('./activity-log.json?' + Date.now());
+        const logs = await logResp.json();
+        logs.slice(-20).reverse().forEach(l => {
+          logHtml += `<div class="log-entry">
+            <span class="log-time">${l.time || ''}</span>
+            <span class="log-agent">${l.agent || ''}</span>
+            <span class="log-action">${l.action || ''}</span>
+          </div>`;
+        });
+      } catch (e) {
+        logHtml = '<div style="color:#666;padding:8px">No activity logs yet. Agents will populate this as they work.</div>';
+      }
+      document.getElementById('activity-log').innerHTML = logHtml;
+    }
+
+    loadData();
+    setInterval(loadData, 30000); // Auto-refresh every 30s
+  </script>
+</body>
+</html>
