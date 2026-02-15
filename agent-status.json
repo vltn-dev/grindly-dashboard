@@ -1,101 +1,79 @@
 {
   "atlas": {
     "status": "idle",
-    "current_task": "Coordination cycle 30min (next: ~17:40)",
-    "tokens_today": 156000,
+    "current_task": "Coordination cycle (30min, next: ~17:50)",
+    "tokens_today": 160000,
     "last_run": "17:09",
-    "output": "Phase 4 dispatch complete ✅",
-    "files_count": 0,
-    "total_size": "0 KB"
+    "output": "Phase 4 dispatch ✅"
   },
   "vega": {
     "status": "completed",
     "current_task": "✅ Product spec Phase 2",
     "tokens_today": 48000,
     "last_run": "2026-02-15",
-    "output": "31KB spec delivered",
-    "files_count": 1,
-    "total_size": "33 KB"
+    "output": "31KB spec"
   },
   "lumen": {
     "status": "completed",
-    "current_task": "✅ Phase 4: /proof + /methodology + OG image",
+    "current_task": "✅ Phase 4: pages + OG image",
     "tokens_today": 118000,
     "last_run": "17:16",
-    "output": "2 pages rewritten + OG fix",
-    "files_count": 5,
-    "total_size": "82 KB"
+    "output": "Proof + Methodology"
   },
   "pulse": {
     "status": "completed",
-    "current_task": "✅ Phase 4: E2E tests extended (36 new)",
+    "current_task": "✅ Phase 4: E2E tests (+36)",
     "tokens_today": 106000,
     "last_run": "17:13",
-    "output": "daytrader + learn + opportunities e2e",
-    "files_count": 1,
-    "total_size": "19 KB"
+    "output": "daytrader + learn + opportunities"
   },
   "forge": {
-    "status": "running",
-    "current_task": "⏳ Phase 4: Diagnostic (build check)",
-    "tokens_today": 166000,
-    "last_run": "17:22",
-    "output": "Timeout x2 — retrying build diagnostics",
-    "files_count": 2,
-    "total_size": "28 KB"
+    "status": "validating",
+    "current_task": "Phase 4: Build fix validation",
+    "tokens_today": 179000,
+    "last_run": "17:21",
+    "output": "dbUser/goals/route syntax fixed — rebuild"
   },
   "quanta": {
     "status": "completed",
-    "current_task": "✅ Phase 4: Opportunities live signals",
+    "current_task": "✅ Phase 4: Live trading signals",
     "tokens_today": 129000,
     "last_run": "17:14",
-    "output": "Real API data + 20 symbols + risk management UI",
-    "files_count": 1,
-    "total_size": "19 KB"
+    "output": "Opportunities UI real data"
   },
   "shield": {
     "status": "completed",
-    "current_task": "✅ Security audit Phase 3",
+    "current_task": "✅ Security Phase 3",
     "tokens_today": 89000,
     "last_run": "2026-02-15",
-    "output": "Paywall guards + RLS verified",
-    "files_count": 1,
-    "total_size": "25 KB"
+    "output": "Paywall audit ✓"
   },
   "flux": {
-    "status": "running",
-    "current_task": "⏳ Phase 4: CI check (retry)",
-    "tokens_today": 96000,
-    "last_run": "17:22",
-    "output": "Timeout — verifying build local",
-    "files_count": 14,
-    "total_size": "64 KB"
+    "status": "validating",
+    "current_task": "Phase 4: Build validation",
+    "tokens_today": 109000,
+    "last_run": "17:20",
+    "output": "Fixes pushed — rebuild in progress"
   },
   "echo": {
     "status": "completed",
-    "current_task": "✅ Landing copy + SEO Phase 3",
+    "current_task": "✅ Landing + SEO Phase 3",
     "tokens_today": 76000,
     "last_run": "2026-02-15",
-    "output": "Sitemap + Open Graph metadata",
-    "files_count": 0,
-    "total_size": "0 KB"
+    "output": "Sitemap + OG"
   },
   "nova": {
     "status": "completed",
-    "current_task": "✅ Analytics provider Phase 3",
+    "current_task": "✅ Analytics Phase 3",
     "tokens_today": 104000,
     "last_run": "17:09",
-    "output": "Sentry + event tracking integrated",
-    "files_count": 1,
-    "total_size": "11 KB"
+    "output": "Sentry + tracking"
   },
   "ledger": {
     "status": "completed",
-    "current_task": "✅ Trial + Stripe webhook Phase 3",
+    "current_task": "✅ Trial Phase 3",
     "tokens_today": 98000,
     "last_run": "2026-02-15",
-    "output": "14-day trial live",
-    "files_count": 1,
-    "total_size": "7 KB"
+    "output": "14-day trial ✓"
   }
 }
