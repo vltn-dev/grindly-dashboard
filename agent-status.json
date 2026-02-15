@@ -4,76 +4,98 @@
     "current_task": "Coordination cycle (30min, next: ~17:50)",
     "tokens_today": 160000,
     "last_run": "17:09",
-    "output": "Phase 4 dispatch ✅"
+    "output": "Phase 4 dispatch ✅",
+    "files_count": 0,
+    "total_size": "0 KB"
   },
   "vega": {
     "status": "completed",
     "current_task": "✅ Product spec Phase 2",
     "tokens_today": 48000,
     "last_run": "2026-02-15",
-    "output": "31KB spec"
+    "output": "31KB spec",
+    "files_count": 1,
+    "total_size": "33 KB"
   },
   "lumen": {
     "status": "completed",
     "current_task": "✅ Phase 4: pages + OG image",
     "tokens_today": 118000,
     "last_run": "17:16",
-    "output": "Proof + Methodology"
+    "output": "Proof + Methodology",
+    "files_count": 5,
+    "total_size": "82 KB"
   },
   "pulse": {
     "status": "completed",
     "current_task": "✅ Phase 4: E2E tests (+36)",
     "tokens_today": 106000,
     "last_run": "17:13",
-    "output": "daytrader + learn + opportunities"
+    "output": "daytrader + learn + opportunities",
+    "files_count": 1,
+    "total_size": "19 KB"
   },
   "forge": {
     "status": "validating",
     "current_task": "Phase 4: Build fix validation",
     "tokens_today": 179000,
     "last_run": "17:21",
-    "output": "dbUser/goals/route syntax fixed — rebuild"
+    "output": "dbUser/goals/route syntax fixed — rebuild",
+    "files_count": 2,
+    "total_size": "28 KB"
   },
   "quanta": {
     "status": "completed",
     "current_task": "✅ Phase 4: Live trading signals",
     "tokens_today": 129000,
     "last_run": "17:14",
-    "output": "Opportunities UI real data"
+    "output": "Opportunities UI real data",
+    "files_count": 1,
+    "total_size": "19 KB"
   },
   "shield": {
     "status": "completed",
     "current_task": "✅ Security Phase 3",
     "tokens_today": 89000,
     "last_run": "2026-02-15",
-    "output": "Paywall audit ✓"
+    "output": "Paywall audit ✓",
+    "files_count": 1,
+    "total_size": "25 KB"
   },
   "flux": {
     "status": "validating",
     "current_task": "Phase 4: Build validation",
     "tokens_today": 109000,
     "last_run": "17:20",
-    "output": "Fixes pushed — rebuild in progress"
+    "output": "Fixes pushed — rebuild in progress",
+    "files_count": 14,
+    "total_size": "64 KB"
   },
   "echo": {
     "status": "completed",
     "current_task": "✅ Landing + SEO Phase 3",
     "tokens_today": 76000,
     "last_run": "2026-02-15",
-    "output": "Sitemap + OG"
+    "output": "Sitemap + OG",
+    "files_count": 0,
+    "total_size": "0 KB"
   },
   "nova": {
     "status": "completed",
     "current_task": "✅ Analytics Phase 3",
     "tokens_today": 104000,
     "last_run": "17:09",
-    "output": "Sentry + tracking"
+    "output": "Sentry + tracking",
+    "files_count": 1,
+    "total_size": "11 KB"
   },
   "ledger": {
     "status": "completed",
     "current_task": "✅ Trial Phase 3",
     "tokens_today": 98000,
     "last_run": "2026-02-15",
-    "output": "14-day trial ✓"
+    "output": "14-day trial ✓",
+    "files_count": 1,
+    "total_size": "7 KB"
   }
 }
