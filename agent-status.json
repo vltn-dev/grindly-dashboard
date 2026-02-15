@@ -27,8 +27,8 @@
     "total_size": "82 KB"
   },
   "pulse": {
-    "status": "running",
-    "current_task": "⏳ Préparation suite tests e2e",
+    "status": "completed",
+    "current_task": "✅ Préparation suite tests e2e",
     "tokens_today": 0,
     "last_run": "16:56",
     "output": "—",
@@ -48,7 +48,7 @@
     "status": "running",
     "current_task": "⏳ Scoring model alignment",
     "tokens_today": 0,
-    "last_run": "16:56",
+    "last_run": "16:57",
     "output": "—",
     "files_count": 1,
     "total_size": "19 KB"
@@ -81,8 +81,8 @@
     "total_size": "0 KB"
   },
   "nova": {
-    "status": "running",
-    "current_task": "⏳ Setup dashboards churn/funnels",
+    "status": "completed",
+    "current_task": "✅ Setup dashboards churn/funnels",
     "tokens_today": 0,
     "last_run": "16:56",
     "output": "—",
