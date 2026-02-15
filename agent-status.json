@@ -9,7 +9,7 @@
     "total_size": "0 KB"
   },
   "vega": {
-    "status": "running",
+    "status": "completed",
     "current_task": "✅ Backlog priorisation + specs DB/auth",
     "tokens_today": 0,
     "last_run": "16:45",
@@ -21,13 +21,13 @@
     "status": "running",
     "current_task": "⏳ Audit UX onboarding + dashboards",
     "tokens_today": 0,
-    "last_run": "16:47",
+    "last_run": "16:48",
     "output": "—",
     "files_count": 5,
     "total_size": "82 KB"
   },
   "pulse": {
-    "status": "running",
+    "status": "completed",
     "current_task": "✅ Préparation suite tests e2e",
     "tokens_today": 0,
     "last_run": "16:45",
@@ -39,13 +39,13 @@
     "status": "running",
     "current_task": "⏳ DB Supabase + Google Sign-In",
     "tokens_today": 0,
-    "last_run": "16:47",
+    "last_run": "16:48",
     "output": "—",
     "files_count": 2,
     "total_size": "28 KB"
   },
   "quanta": {
-    "status": "running",
+    "status": "completed",
     "current_task": "✅ Scoring model alignment",
     "tokens_today": 0,
     "last_run": "16:45",
@@ -57,7 +57,7 @@
     "status": "running",
     "current_task": "⏳ Audit auth + RLS Supabase",
     "tokens_today": 0,
-    "last_run": "16:47",
+    "last_run": "16:48",
     "output": "—",
     "files_count": 1,
     "total_size": "25 KB"
@@ -66,7 +66,7 @@
     "status": "running",
     "current_task": "⏳ Fix CI pnpm + pipeline Vercel",
     "tokens_today": 0,
-    "last_run": "16:47",
+    "last_run": "16:48",
     "output": "—",
     "files_count": 14,
     "total_size": "64 KB"
@@ -75,13 +75,13 @@
     "status": "running",
     "current_task": "⏳ Préparation content-week-08.md",
     "tokens_today": 0,
-    "last_run": "16:47",
+    "last_run": "16:48",
     "output": "—",
     "files_count": 0,
     "total_size": "0 KB"
   },
   "nova": {
-    "status": "running",
+    "status": "completed",
     "current_task": "✅ Setup dashboards churn/funnels",
     "tokens_today": 0,
     "last_run": "16:45",
@@ -93,7 +93,7 @@
     "status": "running",
     "current_task": "⏳ Pricing review + LTV/CAC",
     "tokens_today": 0,
-    "last_run": "16:47",
+    "last_run": "16:48",
     "output": "—",
     "files_count": 1,
     "total_size": "7 KB"
