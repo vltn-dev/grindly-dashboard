@@ -45,8 +45,8 @@
     "total_size": "28 KB"
   },
   "quanta": {
-    "status": "running",
-    "current_task": "⏳ Scoring model alignment",
+    "status": "completed",
+    "current_task": "✅ Scoring model alignment",
     "tokens_today": 0,
     "last_run": "16:58",
     "output": "—",
