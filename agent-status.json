@@ -21,7 +21,7 @@
     "status": "running",
     "current_task": "⏳ Audit UX onboarding + dashboards",
     "tokens_today": 0,
-    "last_run": "16:50",
+    "last_run": "16:51",
     "output": "—",
     "files_count": 5,
     "total_size": "82 KB"
@@ -36,8 +36,8 @@
     "total_size": "19 KB"
   },
   "forge": {
-    "status": "running",
-    "current_task": "⏳ DB Supabase + Google Sign-In",
+    "status": "completed",
+    "current_task": "✅ DB Supabase + Google Sign-In",
     "tokens_today": 0,
     "last_run": "16:50",
     "output": "—",
@@ -66,7 +66,7 @@
     "status": "running",
     "current_task": "⏳ Fix CI pnpm + pipeline Vercel",
     "tokens_today": 0,
-    "last_run": "16:50",
+    "last_run": "16:51",
     "output": "—",
     "files_count": 14,
     "total_size": "64 KB"
