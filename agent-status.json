@@ -18,8 +18,8 @@
     "total_size": "33 KB"
   },
   "lumen": {
-    "status": "running",
-    "current_task": "⏳ Phase 6.2 Tier 2 complete (Onboarding wizard 7-step)",
+    "status": "completed",
+    "current_task": "✅ Phase 6.2 Tier 2 complete (Onboarding wizard 7-step)",
     "tokens_today": 0,
     "last_run": "12:55",
     "output": "e664c3b",
@@ -30,7 +30,7 @@
     "status": "running",
     "current_task": "⏳ FINAL QA: 68% ready (32/47 ATLAS), 3 critical blockers, 15 bugs catalogués",
     "tokens_today": 42000,
-    "last_run": "12:55",
+    "last_run": "12:56",
     "output": "7913bdb | Build ✅ Tests 6/6 ✅ Responsive ✅ Settings ✅ | RAPPORT-FINAL-QA-PULSE.md",
     "files_count": 1,
     "total_size": "19 KB"
@@ -39,7 +39,7 @@
     "status": "running",
     "current_task": "⏳ Phase 6.2 Tier 2 complete (Apple Sign In, pwd reset)",
     "tokens_today": 0,
-    "last_run": "12:55",
+    "last_run": "12:56",
     "output": "f0c91c9",
     "files_count": 2,
     "total_size": "28 KB"
@@ -57,7 +57,7 @@
     "status": "running",
     "current_task": "⏳ Prisma cascade delete (12 models, migration)",
     "tokens_today": 0,
-    "last_run": "12:55",
+    "last_run": "12:56",
     "output": "🔐 Fixing data integrity...",
     "files_count": 1,
     "total_size": "25 KB"
