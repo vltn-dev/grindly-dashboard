@@ -48,7 +48,7 @@
   <button id="refresh-btn" onclick="loadData()">🔄 Refresh</button>
 
   <div class="summary-bar" id="summary-bar">
-    <div class="summary-item"><div class="summary-number" id="total-agents">14</div><div class="summary-label">Agents</div></div>
+    <div class="summary-item"><div class="summary-number" id="total-agents">11</div><div class="summary-label">Agents</div></div>
     <div class="summary-item"><div class="summary-number" id="running-count">—</div><div class="summary-label">Running</div></div>
     <div class="summary-item"><div class="summary-number" id="idle-count">—</div><div class="summary-label">Idle</div></div>
     <div class="summary-item"><div class="summary-number" id="failed-count">—</div><div class="summary-label">Failed</div></div>
@@ -75,9 +75,6 @@
       { id: 'echo',   name: 'Echo',   emoji: '📈', role: 'Growth Content' },
       { id: 'nova',   name: 'Nova',   emoji: '🔍', role: 'Data Analyst' },
       { id: 'ledger', name: 'Ledger', emoji: '🧾', role: 'Finance / Pricing' },
-      { id: 'sentinel', name: 'Sentinel', emoji: '🛡️', role: 'Sentry / Reliability' },
-      { id: 'insights', name: 'Insights', emoji: '📊', role: 'PostHog / Product Analytics' },
-      { id: 'ranker', name: 'Ranker', emoji: '🔍', role: 'SEO / Organic Growth' },
     ];
 
     async function loadData() {
