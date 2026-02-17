@@ -97,5 +97,32 @@
     "output": "—",
     "files_count": 1,
     "total_size": "7 KB"
+  },
+  "sentinel": {
+    "status": "standby",
+    "current_task": "⏸️ Standby — attente clés Sentry (SENTRY_ORG, SENTRY_PROJECT, SENTRY_AUTH_TOKEN)",
+    "tokens_today": 4000,
+    "last_run": "08:01",
+    "output": "Audit SDK OK | 128/132 routes error handling",
+    "files_count": 1,
+    "total_size": "8 KB"
+  },
+  "insights": {
+    "status": "standby",
+    "current_task": "⏸️ Standby — attente clé PostHog (NEXT_PUBLIC_POSTHOG_KEY)",
+    "tokens_today": 4800,
+    "last_run": "09:03",
+    "output": "PostHog SDK intégré, graceful fallback actif",
+    "files_count": 1,
+    "total_size": "8 KB"
+  },
+  "ranker": {
+    "status": "completed",
+    "current_task": "✅ SEO: /blog, /glossary, /faq créés + sitemap + structured data",
+    "tokens_today": 28200,
+    "last_run": "09:18",
+    "output": "97f16cb | 3 pages SEO, FAQPage schema, landing non touchée",
+    "files_count": 1,
+    "total_size": "8 KB"
   }
 }
